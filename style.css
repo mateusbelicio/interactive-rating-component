@@ -1,0 +1,193 @@
+/* GENERAL CONFIGURATIONS */
+:root {
+  /* Primary color */
+  --color-orange: #fb7413;
+
+  /* Neutral colors */
+  --color-white: #ffffff;
+  --color-light-grey: #959eac;
+  --color-medium-grey: #7c8798;
+  --color-dark-blue: #252d37;
+  --color-very-dark-blue: #121417;
+  --color-background: #141519;
+  /* --color-bg-component: radial-gradient(circle at top, #222933, #171e28); */
+  --color-bg-component: radial-gradient(
+    circle 60rem at top,
+    var(--color-dark-blue),
+    var(--color-very-dark-blue)
+  );
+}
+
+html {
+  font-size: 62.5%; /* To make 1rem = 10px */
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Overpass', sans-serif;
+  font-size: 1.4rem;
+
+  background-color: var(--color-background);
+  display: grid;
+  min-height: 100vh;
+  place-content: center;
+  position: relative;
+}
+
+/* MAIN */
+.component-container {
+  background: var(--color-bg-component);
+  border-radius: 3.2rem;
+  color: var(--color-white);
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+  margin: auto;
+  max-width: 33rem;
+  min-height: 36rem;
+  min-width: 32rem;
+  padding: 2.4rem;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.c-icon {
+  align-items: center;
+  background-color: var(--color-dark-blue);
+  border-radius: 50%;
+  display: flex;
+  height: 4rem;
+  justify-content: center;
+  width: 4rem;
+}
+
+/* 330 x 360 */
+
+.c-title {
+  font-size: 2.4rem;
+}
+
+.c-description {
+  color: var(--color-light-grey);
+  line-height: 1.5;
+  margin-top: -1rem;
+}
+
+.c-form {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.c-form input {
+  display: none;
+}
+
+.c-input-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.c-form * {
+  transition: all 0.3s ease;
+}
+
+.c-label {
+  align-items: center;
+  background-color: var(--color-dark-blue);
+  border-radius: 50%;
+  color: var(--color-light-grey);
+  cursor: pointer;
+  display: flex;
+  font-weight: 700;
+  height: 4.2rem;
+  justify-content: center;
+  line-height: 1;
+  width: 4.2rem;
+}
+
+.c-label:hover {
+  background-color: var(--color-medium-grey);
+  color: var(--color-white);
+}
+
+.c-form input:checked + .c-label {
+  color: var(--color-white);
+  background-color: var(--color-orange);
+}
+
+.c-button {
+  background-color: var(--color-orange);
+  border-radius: 3rem;
+  border: none;
+  color: var(--color-white);
+  cursor: pointer;
+  font-family: 'Overpass', sans-serif;
+  font-size: 1.4rem;
+  font-weight: 700;
+  letter-spacing: 0.3rem;
+  padding: 1.6rem;
+  text-transform: uppercase;
+  width: 100%;
+}
+
+.c-button:hover {
+  background-color: var(--color-white);
+  color: var(--color-orange);
+}
+
+/* THANKS */
+#thanks-state.component-container {
+  align-items: center;
+  text-align: center;
+}
+
+.c-image {
+  width: 50%;
+}
+
+.c-message-selected {
+  background-color: var(--color-dark-blue);
+  border-radius: 2rem;
+  color: var(--color-orange);
+  font-weight: 400;
+  padding: 1rem 2rem;
+  width: fit-content;
+}
+
+/* FOOTER */
+.attribution {
+  bottom: 5rem;
+  color: var(--color-white);
+  font-size: 11px;
+  left: 0;
+  margin-top: auto;
+  position: absolute;
+  right: 0;
+  text-align: center;
+}
+
+.attribution a {
+  color: var(--color-white);
+}
+
+.attribution a:hover {
+  color: var(--color-light-grey);
+}
+
+/* ESPECIAL STATES */
+.hidden {
+  display: none;
+}
+
+/* MEDIAS */
+@media screen and (max-width: 35em) {
+  .component-container {
+    border-radius: 2.4rem;
+  }
+}
