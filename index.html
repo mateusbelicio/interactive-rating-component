@@ -27,29 +27,29 @@
     <!-- Rating state start -->
     <main id="rating-state" class="component-container">
       <div class="c-icon"><img src="./images/icon-star.svg" alt="Icon star" /></div>
-      <h2 class="c-title">How did we do?</h2>
+      <h1 class="c-title">How did we do?</h1>
       <p class="c-description">
         Please let us know how we did with your support request. All feedback is appreciated to help
         us improve our offering!
       </p>
 
-      <form action="./" method="post" class="c-form">
-        <div class="c-input-container">
-          <input type="radio" name="c-input" id="c-input--1" />
+      <form class="c-form">
+        <fieldset class="c-input-container">
+          <input required type="radio" name="c-input" id="c-input--1" value="1" hidden />
           <label for="c-input--1" class="c-label c-label--1">1</label>
 
-          <input type="radio" name="c-input" id="c-input--2" />
+          <input type="radio" name="c-input" id="c-input--2" value="2" hidden />
           <label for="c-input--2" class="c-label c-label--2">2</label>
 
-          <input type="radio" name="c-input" id="c-input--3" />
+          <input type="radio" name="c-input" id="c-input--3" value="3" hidden />
           <label for="c-input--3" class="c-label c-label--3">3</label>
 
-          <input type="radio" name="c-input" id="c-input--4" />
+          <input type="radio" name="c-input" id="c-input--4" value="4" hidden />
           <label for="c-input--4" class="c-label c-label--4">4</label>
 
-          <input type="radio" name="c-input" id="c-input--5" />
+          <input type="radio" name="c-input" id="c-input--5" value="5" hidden />
           <label for="c-input--5" class="c-label c-label--5">5</label>
-        </div>
+        </fieldset>
 
         <button class="c-button" type="submit">Submit</button>
       </form>

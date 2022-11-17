@@ -84,11 +84,12 @@ body {
   gap: 3rem;
 }
 
-.c-form input {
+/* .c-form input {
   display: none;
-}
+} */
 
 .c-input-container {
+  border: none;
   display: flex;
   justify-content: space-between;
   align-items: center;
