@@ -30,8 +30,10 @@ Users should be able to:
 
 ### Screenshot
 
-![](./images/results/mobile-rating-result.png)
-![](./images/results/mobile-thanks-result.png)
+<div style="display: flex; align-items: center; justify-content: center; gap: 10px; margin: 20px auto;">
+  <img src="./images/results/mobile-rating-result.png">
+  <img src="./images/results/mobile-thanks-result.png">
+</div>
 
 ### Links
 
